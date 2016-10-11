@@ -99,10 +99,11 @@ body{
 
 .floating {
     animation-name: floating;
+    animation-timing-function: ease-in;
     -webkit-animation-name: floating;
 
-    animation-duration: 10s;   
-    -webkit-animation-duration: 10s;
+    animation-duration: 20s;   
+    -webkit-animation-duration: 20s;
 
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
@@ -112,58 +113,41 @@ body{
     0% {
         transform: translate(0%, 0%);  
     }
-    20% {
-         transform: translate(50%, 20%); 
+    
+    10% {
+         transform: translate(40%, -13%); 
 
     }
+    20% {
+            transform:translate(-40%, 30%);
+    }
+    30% {
+        transform: translate(0%, 0%);  
+    }
     40% {
-            transform:translate(-40%, -20%);
+        transform: translate(-40%, -20%);  
+    }
+    50% {
+        transform: translate(-40%, 0%);  
     }
     60% {
-            transform:translate(0%, 40%);
+        transform: translate(40%, 20%);  
+    }
+    70% {
+        transform: translate(0%, 20%);  
     }
     80% {
-            transform:translate(10%, -40%);
+        transform: translate(0%, 0%);  
+    }
+    90% {
+        transform: translate(0%, 20%);  
     }
     100% {
         transform: translate(0%, 0%);
     }           
 }
 
-/*.floating-body {
-    animation-name: floatingBody;
-    -webkit-animation-name: floatingBody;
 
-    animation-duration: 5s;   
-    -webkit-animation-duration: 5s;
-
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-}
-
-@keyframes floatingBody {
-    0% {
-        transform: translateY(0%);  
-    }
-    20% {
-         transform: translateY(10%%); 
-
-    }
-    40% {
-            transform:translateY(20%%);
-    }
-    60% {
-            transform:translateY(20%);
-    }
-    80% {
-            transform:translateY(10%);
-    }
-    100% {
-        transform: translateY(0%);
-    }           
-}
-
-*/
 
 .floating-shadow {
      animation-name: floating-shadow;
@@ -178,22 +162,70 @@ body{
 
 @keyframes floating-shadow {
     0% {
-        transform: scale(2)  
+        transform: scale(2);
     }
     20% {
-         transform: scale(1.5); 
+         transform: scale(1.5);
 
     }
     40% {
-            transform: scale(1);
+        transform: scale(1);
     }
     60% {
-            transform: scale(1);
+        transform: scale(1);
     }
     80% {
-            transform: scale(1.5);
+        transform: scale(1.5);
     }
     100% {
         transform: scale(2);
     }           
 }
+
+.floating-shadow-height {
+     animation-name: floating-shadow-height;
+    -webkit-animation-name: floating-shadow-height;
+
+    animation-duration: 20s;   
+    -webkit-animation-duration: 20s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating-shadow-height {
+    0% {
+        transform: translateY(-50%);
+    }
+    10% {
+        transform: translateY(0%);
+    }
+    20% {
+         transform: translateY(50%);
+    }
+    30% {
+        transform: translateY(100%);
+    }
+    40% {
+        transform: translateY(150%);
+    }
+    50% {
+        transform: translateY(200%);
+    }
+    60% {
+        transform: translateY(200%);
+    }
+    70% {
+        transform: translateY(150%);
+    }
+    80% {
+        transform: translateY(100%);
+    }
+    90% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-50%);
+    }           
+}
+
