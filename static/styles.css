@@ -46,7 +46,7 @@ body{
     background-color: black;
     height: 50px;
     width: 80px;
-    margin: 160px 85px;
+    margin: 160px 83px;
     border-radius: 0 0 50% 50%;
 }
 
@@ -87,4 +87,12 @@ body{
     margin: 0px -2px;
 
 
+}
+
+.shadow {
+    height: 30px;
+    width: 130px;
+    background-color: black;
+    margin: 40px auto;
+    border-radius: 50%
 }
