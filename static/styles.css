@@ -2,13 +2,13 @@ body{
     background-color: gray;
 }
 
-#ghost-all {
+.ghost-all {
     margin: 150px auto;
     height: auto;
     width: auto;
 
 }
-#ghost-body {
+.ghost-body {
     background-color: #7DC9E3;
     height: 300px;
     width: 245px;
@@ -95,4 +95,105 @@ body{
     background-color: black;
     margin: 40px auto;
     border-radius: 50%
+}
+
+.floating {
+    animation-name: floating;
+    -webkit-animation-name: floating;
+
+    animation-duration: 10s;   
+    -webkit-animation-duration: 10s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0%, 0%);  
+    }
+    20% {
+         transform: translate(50%, 20%); 
+
+    }
+    40% {
+            transform:translate(-40%, -20%);
+    }
+    60% {
+            transform:translate(0%, 40%);
+    }
+    80% {
+            transform:translate(10%, -40%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }           
+}
+
+/*.floating-body {
+    animation-name: floatingBody;
+    -webkit-animation-name: floatingBody;
+
+    animation-duration: 5s;   
+    -webkit-animation-duration: 5s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floatingBody {
+    0% {
+        transform: translateY(0%);  
+    }
+    20% {
+         transform: translateY(10%%); 
+
+    }
+    40% {
+            transform:translateY(20%%);
+    }
+    60% {
+            transform:translateY(20%);
+    }
+    80% {
+            transform:translateY(10%);
+    }
+    100% {
+        transform: translateY(0%);
+    }           
+}
+
+*/
+
+.floating-shadow {
+     animation-name: floating-shadow;
+    -webkit-animation-name: floating-shadow;
+
+    animation-duration: 10s;   
+    -webkit-animation-duration: 10s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating-shadow {
+    0% {
+        transform: scale(2)  
+    }
+    20% {
+         transform: scale(1.5); 
+
+    }
+    40% {
+            transform: scale(1);
+    }
+    60% {
+            transform: scale(1);
+    }
+    80% {
+            transform: scale(1.5);
+    }
+    100% {
+        transform: scale(2);
+    }           
 }
